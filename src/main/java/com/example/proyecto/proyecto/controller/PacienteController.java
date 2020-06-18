@@ -5,7 +5,7 @@ package com.example.proyecto.proyecto.controller;
 import java.util.List;
 
 import javax.validation.Valid;
-
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -17,12 +17,14 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.example.proyecto.proyecto.entity.Paciente;
 import com.example.proyecto.proyecto.service.PacienteService;
 
 @RestController
 @RequestMapping("/v1")
+@CrossOrigin(origins = "*", methods= {RequestMethod.GET,RequestMethod.POST})
 public class PacienteController {
     
     @Autowired

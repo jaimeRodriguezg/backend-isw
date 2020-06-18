@@ -32,8 +32,6 @@ public class Paciente {
     private String telefono;
     @Column(name="fechaCreacion")
     private Date fechaCreacion;
-    @Column(name="codigoHospital")
-    private String codigoHospital;
     @Column(name="diagnostico")
 	private String diagnostico;
     
@@ -44,8 +42,7 @@ public class Paciente {
 
     public Paciente (long id, String nombre, String rut, int edad, 
                     String sexo, String email, String telefono,
-                    Date fechaCreacion, String codigoHospital, 
-                    String diagnostico, String codigo
+                    Date fechaCreacion, String diagnostico, String codigo
                     ) 
                     {
                         this.id= id;
@@ -56,7 +53,6 @@ public class Paciente {
                         this.email= email;
                         this.telefono= telefono;
                         this.fechaCreacion= fechaCreacion;
-                        this.codigoHospital= codigoHospital;
                         this.diagnostico= diagnostico;
                         this.codigo= codigo;   
                     }
@@ -108,12 +104,6 @@ public class Paciente {
     }
     public void setFechaCreacion(Date fechaCreacion) {
         this.fechaCreacion = fechaCreacion;
-    }
-    public String getCodigoHospital() {
-        return codigoHospital;
-    }
-    public void setCodigoHospital(String codigoHospital) {
-        this.codigoHospital = codigoHospital;
     }
     public String getDiagnostico() {
         return diagnostico;

@@ -1,6 +1,6 @@
 # Requisitos
 ```
-** Crear base de datos "hospital" **
+Crear base de datos "hospital"
 ```
 # Instalación y Uso
 Para la instalación
