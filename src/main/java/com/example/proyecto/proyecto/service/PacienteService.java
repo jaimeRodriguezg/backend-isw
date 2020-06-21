@@ -25,8 +25,9 @@ public class PacienteService {
         }
     }
 
-    public boolean actualizar(Paciente paciente){
+    public boolean actualizar(long id){
         try{
+            Paciente paciente = repositorio.findById(id);
             repositorio.save(paciente);
             return true;
         } catch(Exception e){

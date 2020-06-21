@@ -51,9 +51,9 @@ public class PacienteController {
 		return servicio.crear(paciente);
     }
     
-    @PutMapping("/paciente")
-	public boolean actualizarPaciente(@RequestBody @Valid Paciente paciente) {
-		return servicio.actualizar(paciente);
+    @PutMapping("/paciente/{id}")
+	public boolean actualizarPaciente(@PathVariable("id") long id) {
+		return servicio.actualizar(id);
     }
     
     @DeleteMapping("/paciente/{id}")
