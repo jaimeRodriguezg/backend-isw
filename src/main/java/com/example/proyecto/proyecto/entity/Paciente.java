@@ -40,7 +40,7 @@ public class Paciente {
 
     }
 
-    public Paciente (long id, String nombre, String rut, int edad, 
+    public Paciente (long id, String nombre, String rut, Date fechaNacimiento, 
                     String sexo, String email, String telefono,
                     Date fechaCreacion, String diagnostico, String codigo
                     ) 
@@ -75,10 +75,10 @@ public class Paciente {
     public void setRut(String rut) {
         this.rut = rut;
     }
-    public Date getfechaNacimiento() {
+    public Date getFechaNacimiento() {
         return fechaNacimiento;
     }
-    public void setEdad(Date fechaNacimiento) {
+    public void setFechaNacimiento(Date fechaNacimiento) {
         this.fechaNacimiento = fechaNacimiento;
     }
     public String getSexo() {
