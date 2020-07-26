@@ -22,7 +22,7 @@ public class Paciente {
     private String rut;
     @Column(name="codigo")
 	private String codigo;
-    @Column(name="edad")
+    @Column(name="fechaNacimiento")
     private Date fechaNacimiento;
     @Column(name="sexo")
     private String sexo;
