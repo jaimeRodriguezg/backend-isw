@@ -23,7 +23,7 @@ public class Paciente {
     @Column(name="codigo")
 	private String codigo;
     @Column(name="edad")
-    private int edad;
+    private Date fechaNacimiento;
     @Column(name="sexo")
     private String sexo;
     @Column(name="email")
@@ -48,7 +48,7 @@ public class Paciente {
                         this.id= id;
                         this.nombre= nombre;
                         this.rut= rut;
-                        this.edad= edad;
+                        this.fechaNacimiento= fechaNacimiento;
                         this.sexo= sexo;
                         this.email= email;
                         this.telefono= telefono;
@@ -75,11 +75,11 @@ public class Paciente {
     public void setRut(String rut) {
         this.rut = rut;
     }
-    public int getEdad() {
-        return edad;
+    public Date getfechaNacimiento() {
+        return fechaNacimiento;
     }
-    public void setEdad(int edad) {
-        this.edad = edad;
+    public void setEdad(Date fechaNacimiento) {
+        this.fechaNacimiento = fechaNacimiento;
     }
     public String getSexo() {
         return sexo;
