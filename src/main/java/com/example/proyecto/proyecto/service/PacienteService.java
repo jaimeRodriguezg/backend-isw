@@ -17,11 +17,18 @@ public class PacienteService {
     private PacienteRepository repositorio;
 
     public boolean crear(Paciente paciente){
-        try{
-            repositorio.save(paciente);
-            return true;
-        } catch(Exception e){
+        if (    paciente.getNombre() == null || paciente.getCodigo() == null ||paciente.getDiagnostico() == null 
+            || paciente.getEmail() == null   ||  paciente.getFechaCreacion() == null  || paciente.getFechaNacimiento() == null
+            || paciente.getRut() == null    ||  paciente.getSexo() == null|| paciente.getTelefono() == null){ 
             return false;
+        }else{
+            
+            try{
+                repositorio.save(paciente);
+                return true;
+            } catch(Exception e){
+                return false;
+            }
         }
     }
 
