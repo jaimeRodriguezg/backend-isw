@@ -55,6 +55,8 @@ public class PacienteService {
 
     public Paciente obtenerporId(long id){
         return repositorio.findById(id);
+        
+
     }
 
     public List<Paciente> obtenerAll(){

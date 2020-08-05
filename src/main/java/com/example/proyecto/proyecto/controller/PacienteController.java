@@ -34,6 +34,7 @@ public class PacienteController {
     @GetMapping("/paciente/id")
 	public Paciente obtenerporId(@RequestParam(name="id", required = true ) long id) {
 		return servicio.obtenerporId(id);
+		
     }
     
     @GetMapping("/paciente/nombre")
