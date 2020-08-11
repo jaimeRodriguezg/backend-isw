@@ -24,7 +24,7 @@ import com.example.proyecto.proyecto.service.PacienteService;
 
 @RestController
 @RequestMapping("/v1")
-@CrossOrigin(origins = "*", methods= {RequestMethod.GET,RequestMethod.POST})
+@CrossOrigin(origins = "*", methods= {RequestMethod.GET,RequestMethod.POST, RequestMethod.DELETE, RequestMethod.PUT})
 public class PacienteController {
     
     @Autowired
